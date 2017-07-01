@@ -1,6 +1,6 @@
 ;(function(){
     /* 初始化 */
-    var home = [113.31834, 22.998259];
+    var home = [113.311112, 22.992108];
 
     var map = new AMap.Map("allmap", {
         resizeEnable: true,
@@ -18,19 +18,27 @@
             buttonPosition:'RB'
         });
         map.addControl(geolocation);
-        geolocation.getCurrentPosition();
+        // geolocation.getCurrentPosition();
     });
 
-    // var tools = {
-    //     addMarker:function(point, labelText) {
-    //         var marker = new AMap.Marker(point);
-    //         if(labelText) {
-    //             var label = new AMap.Label(labelText, {offset:new BMap.Size(20,-10)});
-    //             marker.setLabel(label);
-    //         }
-    //         map.addOverlay(marker);
-    //     }
-    // }
+    /* 图片自适应 */
+    AMap.event.addDomListener(document.getElementById('setFitView'), 'click', function() {
+        var newCenter = map.setFitView();
+    });
 
-    // tools.addMarker(home, "Home")
+    var tools = {
+        addMarker:function(point, labelText) {
+            var marker = new AMap.Marker({
+                position: point
+            });
+            marker.setMap(map);
+
+            labelText && marker.setLabel({
+                offset: new AMap.Pixel(20,20),
+                content: labelText
+            })
+        }
+    }
+
+    tools.addMarker(home, "Home")
 })();
