@@ -18,6 +18,23 @@
                 '西关婆婆面'
             ],
             addr: '北京路'
+        },
+        {
+             name: '上下九步行街',
+            position: [113.246109,23.112835],
+            pic: ['https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=f9a1b0fd41a98226accc2375ebebd264/060828381f30e924aafcaeb94e086e061c95f7d9.jpg'],
+            highlight: [
+                '宝华面店',
+                '银记肠粉',
+                '陈添记',
+                '林林牛杂屋',
+                '伍湛记',
+                '南信甜品牛奶专家',
+                '顺记冰室',
+                '仁信甜品店',
+                '黄振龙凉茶'
+            ],
+            addr: '上下九步行街'
         }
     ];
 
