@@ -1,6 +1,25 @@
+
 ;(function(){
     /* 初始化 */
     var home = [113.311112, 22.992108];
+    var data = [
+        {
+            name: '北京路美食街',
+            position: [113.270331,23.118724],
+            pic: ['https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=e725906f0ff431ada8df4b6b2a5fc7ca/f11f3a292df5e0feccb7fcfc5f6034a85fdf729b.jpg'],
+            highlight: [
+                '银记肠粉',
+                '富临食府',
+                '玫瑰甜品店',
+                '达杨原味炖品',
+                '大头虾',
+                '食盈碗仔翅',
+                '老西关濑粉',
+                '西关婆婆面'
+            ],
+            addr: '北京路'
+        }
+    ];
 
     var map = new AMap.Map("allmap", {
         resizeEnable: true,
@@ -36,9 +55,102 @@
             labelText && marker.setLabel({
                 offset: new AMap.Pixel(20,20),
                 content: labelText
+            });
+
+            return marker;
+        },
+        infoWindow:(function() {
+            var infoWindow = new AMap.InfoWindow({
+                offset: new AMap.Pixel(16, -45),
+                isCustom: true
+            });
+
+            function createInfo(title, content, idx) {
+                 var info = document.createElement("div");
+                info.className = "info";
+
+                //可以通过下面的方式修改自定义窗体的宽高
+                //info.style.width = "400px";
+                // 定义顶部标题
+                var top = document.createElement("div");
+                var titleD = document.createElement("div");
+                var closeX = document.createElement("img");
+                top.className = "info-top";
+                titleD.innerHTML = '<a>'+title+'</a>';
+                titleD.data_idx = idx;
+                titleD.onclick = function() {
+                    tools.openGaoDe(this.data_idx);
+                }
+
+                closeX.src = "http://webapi.amap.com/images/close2.gif";
+                closeX.onclick = tools.infoWindow.close;
+
+                top.appendChild(titleD);
+                top.appendChild(closeX);
+                info.appendChild(top);
+
+                // 定义中部内容
+                var middle = document.createElement("div");
+                middle.className = "info-middle";
+                middle.style.backgroundColor = 'white';
+                middle.innerHTML = content;
+                info.appendChild(middle);
+
+                // 定义底部内容
+                var bottom = document.createElement("div");
+                bottom.className = "info-bottom";
+                bottom.style.position = 'relative';
+                bottom.style.top = '0px';
+                bottom.style.margin = '0 auto';
+                var sharp = document.createElement("img");
+                sharp.src = "http://webapi.amap.com/images/sharp.png";
+                bottom.appendChild(sharp);
+                info.appendChild(bottom);
+                return info;
+            }
+
+            return {
+                open:function(pos, data, idx) {
+                    var content = [];
+                    content.push('<img src="'+data.pic+'">地址：'+data.addr);
+                    content.push('特色：'+data.highlight.join(','));
+
+                    var info = createInfo(data.name, content.join('<br>'), idx);
+                    infoWindow.setContent(info);
+                    infoWindow.open(map, pos);
+                },
+                close:function() {
+                    map.clearInfoWindow();
+                }
+            }
+        })(),
+        openGaoDe: function(idx) {
+            var marker = MarkerMemo[idx].marker;
+            var data = MarkerMemo[idx].data;
+
+            marker.markOnAMAP({
+                name: data.name,
+                position: marker.getPosition()
             })
         }
     }
 
-    tools.addMarker(home, "Home")
+    tools.addMarker(home, "Home");
+
+    var MarkerMemo= [];
+
+    /* 添加数据 */
+    data.forEach(function(item, idx){
+        var marker = tools.addMarker(item.position, item.name);
+        marker.data = item;
+
+        marker.on('click', function(e){
+            tools.infoWindow.open(e.target.getPosition(), e.target.data, idx);
+        });
+
+        MarkerMemo.push({
+            marker: marker,
+            data: item
+        })
+    });
 })();
