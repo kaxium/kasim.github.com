@@ -35,6 +35,83 @@
                 '黄振龙凉茶'
             ],
             addr: '上下九步行街'
+        },
+        {
+            name: '南浦鹅庄',
+            position: [113.292771,23.032446],
+            pic: ['http://hiphotos.baidu.com/nuomi/pic/item/a50f4bfbfbedab643dd3d4cefd36afc379311e1e.jpg'],
+            highlight: [
+                '芋头焖鹅'
+            ],
+            addr: '南浦站C出口'
+        },
+        {
+            name: '潮府',
+            position: [113.338657,23.00604],
+            pic: ['http://p0.meituan.net/deal/5263abd3e7193ea899fc6a43e8b883ef582104.jpg'],
+            highlight: [
+                '粤菜',
+                '早茶'
+            ],
+            addr: '番禺区番禺大道北南大路口'
+        },
+        {
+            name: '道谷有机主题餐厅',
+            position: [113.333961,23.018367],
+            pic: ['http://qcloud.dpfile.com/pc/07gzO09QRkFo_7_BL30kp8fT_ud3IQ2SnxHvBBk9RNFdo_J2BOAVauavBqpBqhsJTYGVDmosZWTLal1WbWRW3A.jpg'],
+            highlight: [
+                '黑松露系列'
+            ],
+            addr: '迎宾路河村路段362号'
+        },
+        {
+            name: '四海一家',
+            position: [113.34218,23.00839],
+            pic: ['http://qcloud.dpfile.com/pc/vLYh6mVfOdyPT0hqe7-hXRu4ZAVI0nqryCS3fOHcHIdjRCRX_cVL81Spz4gYtEprTYGVDmosZWTLal1WbWRW3A.jpg'],
+            highlight: [
+                '自助餐',
+                '日料',
+                '海鲜'
+            ],
+            addr: '南村镇迎宾路万博中心A2栋1-2楼'
+        },
+        {
+            name: '滋粥楼',
+            position: [113.339968,23.012571],
+            pic: ['http://qcloud.dpfile.com/pc/eLVOeEVQp2m3WOU1CPcQe6VFgQFtCBgzNuSrxQQOp2s85m6KLxJrZMuRwDiePBFkTYGVDmosZWTLal1WbWRW3A.jpg'],
+            highlight: [
+                '火锅',
+                '炒菜'
+            ],
+            addr: '南村镇兴南大道33号桥兴商务大厦2楼'
+        },
+        {
+            name: '毕德寮',
+            position: [113.321956,23.126051],
+            pic: ['https://img.meituan.net/msmerchant/6732bafd974f8a4f34d2bb0c4d92a9193366026.jpg%40700w_700h_0e_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20'],
+            highlight: [
+                '特色虾饺'
+            ],
+            addr: '华夏路30号富力盈通大厦四楼401-409房'
+        },
+        {
+            name: '孖记士多',
+            position: [113.260285,23.121],
+            pic: ['http://qcloud.dpfile.com/pc/A_Az8FvqcnzhMvnwBj_odMFATpxWWX9ib0bAAflqBpXEWz-wsUVvVdRULWYkSDSzTYGVDmosZWTLal1WbWRW3A.jpg'],
+            highlight: [
+                '炒菜',
+                '黑暗料理'
+            ],
+            addr: '米市路47号泗巷内'
+        },
+        {
+            name: '芳村榕树头-叹佬鸡煲',
+            position: [113.238625,23.100701],
+            pic: ['https://img.meituan.net/msmerchant/3fe891bc92fa5bb086d7b8fcd5db0808617709.jpg%40700w_700h_0e_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20'],
+            highlight: [
+                '特色鸡煲'
+            ],
+            addr: '二沙地11-13号'
         }
     ];
 
