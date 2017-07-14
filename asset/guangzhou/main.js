@@ -112,6 +112,106 @@
                 '特色鸡煲'
             ],
             addr: '二沙地11-13号'
+        },
+        {
+            name: '超记煲仔饭',
+            position: [113.271433,23.11662],
+            pic: ['http://qcloud.dpfile.com/pc/3N8h4omGqwsGWuWJOQtCYquu1ntwbCcPbwCklgFKj_3mJu6skfkszgwG9v8QElsoTYGVDmosZWTLal1WbWRW3A.jpg'],
+            highlight: [
+                '特色煲仔饭'
+            ],
+            addr: '北京南路星光广场'
+        },
+        {
+            name: '从前的小酒馆',
+            position: [113.362607,22.940961],
+            pic: ['http://qcloud.dpfile.com/pc/JNVnrhGJWCHYEpaAHGfvR6eq7LxQiudEnIWR8aUaP3BxllMigM3xkOBwUgizytEnTYGVDmosZWTLal1WbWRW3A.jpg'],
+            highlight: [
+                '川菜'
+            ],
+            addr: '光明北路易发商业街二楼226-227号'
+        },
+        {
+            name: '表哥好味鹅',
+            position: [113.351699,22.982069],
+            pic: ['http://qcloud.dpfile.com/pc/00VL4zG_SvW0QoXSxRQQmOhpQNecLq8Qm43EWySLC4VfvXDPj6ufn7ygGkheaIIZTYGVDmosZWTLal1WbWRW3A.jpg'],
+            highlight: [
+                '马拉糕',
+                '鲍鱼花螺焖鸡'
+            ],
+            addr: '里仁洞彭地大街新区三巷12号'
+        },
+        {
+            name: '洲记阳山农家',
+            position: [113.374665,23.087216],
+            pic: ['http://qcloud.dpfile.com/pc/nKUwPpDs9FBUHr4C-4AjwfsyNszD6hIDutPKmSP83bybBI9M86czpewAp1hb5qoLTYGVDmosZWTLal1WbWRW3A.jpg'],
+            highlight: [
+                '正宗阳山鸡项'
+            ],
+            addr: '北山村桥头大街226-228号'
+        },
+        {
+            name: '鸭五件私房菜',
+            position: [113.230919,23.049904],
+            pic: ['http://qcloud.dpfile.com/pc/8IdnIAEWl960uc6oRoLJN1j1xnIWcrQMMMmCYxHpQMFwvOVZQl0waih_sobA4pMsTYGVDmosZWTLal1WbWRW3A.jpg'],
+            highlight: [
+                '韶关鸭五件'
+            ],
+            addr: '芳村西朗海南连生坊45号'
+        },
+        {
+            name: '阿婆牛杂',
+            position: [113.237365,23.099419],
+            pic: ['http://qcloud.dpfile.com/pc/rShFIKq_6GGm1VDuLLTDv1uK14rIKIpGqlqvUr9ym2WUDUk6-KqvLg70OVUXtjEHTYGVDmosZWTLal1WbWRW3A.jpg'],
+            highlight: [
+                '牛杂'
+            ],
+            addr: '芳村大道陆居路陆居市场内'
+        },
+        {
+            name: '新联肠粉店',
+            position: [113.235064,23.116762],
+            pic: ['http://qcloud.dpfile.com/pc/MzG2noHV5o_rFrdziW1cUNJPgyK8DpbJYL5ud_QIvbcJax8J12Hib8O1myTwRDFoTYGVDmosZWTLal1WbWRW3A.jpg'],
+            highlight: [
+                '布拉肠'
+            ],
+            addr: '多宝路88号'
+        },
+        {
+            name: '鸟州力裏庭',
+            position: [113.32903,23.13056],
+            pic: ['http://qcloud.dpfile.com/pc/s4Xyu17-Asf5aMDZt_tF_XJLbLLIsDmLPWOLrsm2s0Luq6d5-stDNs9b0W58yw6TTYGVDmosZWTLal1WbWRW3A.jpg'],
+            highlight: [
+                '烧烤'
+            ],
+            addr: '体育东路86号201'
+        },
+        {
+            name: '百花甜品店',
+            position: [113.275551,23.122554],
+            pic: ['http://qcloud.dpfile.com/pc/P9c9-zyDsuN67fuJ1QygGG6kOa51x0R9Lx3IyyNmApzV-Oie0zXWa0hU-eqGUQgMTYGVDmosZWTLal1WbWRW3A.jpg'],
+            highlight: [
+                '凤凰奶糊'
+            ],
+            addr: '文明路210'
+        },
+        {
+            name: '玫瑰甜品',
+            position: [113.275827,23.122613],
+            pic: ['http://qcloud.dpfile.com/pc/RDlCt4fzDdMDf7YLteRgFpudvhVv5IXDF-9TTqWEJfaEhjjlGPldAQe48WdJLJmzTYGVDmosZWTLal1WbWRW3A.jpg'],
+            highlight: [
+                '原味杏仁豆腐'
+            ],
+            addr: '文明路218号'
+        },
+        {
+            name: '歡喜豬咪家',
+            position:[113.281195,23.090945],
+            pic: ['http://qcloud.dpfile.com/pc/stov5s-5XPVouuBip9wJanJCmSVxy-jcmGpiwCFPVWbtXX1i_3zJ1y9pEkJHH7_WTYGVDmosZWTLal1WbWRW3A.jpg'],
+            highlight: [
+                '潮汕菜'
+            ],
+            addr: '细岗东二街2号101(近大参林药店)'
         }
     ];
 
